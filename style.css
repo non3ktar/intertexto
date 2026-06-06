@@ -1,0 +1,98 @@
+/* Custom Styles for EduAção - Pro Max */
+@layer utilities {
+    .glass-panel {
+        @apply bg-slate-900/40 backdrop-blur-xl border border-white/10;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+}
+
+/* Base resets & typography tweaks */
+body {
+    background-color: #020617; /* Slate 950 */
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+        radial-gradient(at 50% 0%, hsla(225,39%,30%,0.1) 0, transparent 50%), 
+        radial-gradient(at 100% 0%, hsla(339,49%,30%,0.1) 0, transparent 50%);
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(109, 40, 217, 0.5); /* Primary color */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(109, 40, 217, 0.8);
+}
+
+/* Forms and Inputs */
+input, textarea, select {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Transitions */
+.view-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Markdown Content Styling */
+.prose {
+    color: #cbd5e1; /* slate-300 */
+    line-height: 1.6;
+}
+.prose h1, .prose h2, .prose h3 {
+    color: #f8fafc; /* slate-50 */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.prose p {
+    margin-bottom: 1em;
+}
+.prose strong {
+    color: #fff;
+    font-weight: 600;
+}
+.prose blockquote {
+    border-left: 4px solid #6d28d9;
+    padding-left: 1rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* SweetAlert2 Dark Theme Override */
+.swal2-popup.swal2-toast {
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #f8fafc !important;
+}
+.swal2-popup.swal2-modal {
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 1rem !important;
+    color: #f8fafc !important;
+}
+.swal2-title, .swal2-html-container {
+    color: #f8fafc !important;
+}
+.swal2-confirm {
+    background: linear-gradient(to right, #6d28d9, #4f46e5) !important;
+    border-radius: 0.75rem !important;
+}
+.swal2-cancel {
+    background: #334155 !important;
+    border-radius: 0.75rem !important;
+}
