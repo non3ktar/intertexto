@@ -2,8 +2,8 @@
 // CONFIGURAÇÃO DO SUPABASE
 // ============================================================================
 // ATENÇÃO: Substitua as strings abaixo com os dados do seu projeto Supabase!
-const SUPABASE_URL = 'COLE_SEU_URL_AQUI';
-const SUPABASE_KEY = 'COLE_SUA_ANON_KEY_AQUI';
+const SUPABASE_URL = 'https://idmzlofsxqhedsqcvryp.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlkbXpsb2ZzeHFoZWRzcWN2cnlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA3NTc3NDQsImV4cCI6MjA5NjMzMzc0NH0.7tV6CUUhYF5rzFloZxHSiB2uhblH_n5ubNy9bvYv3HE';
 
 let supabaseClient;
 if (SUPABASE_URL !== 'COLE_SEU_URL_AQUI') {
